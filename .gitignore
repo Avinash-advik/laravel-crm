@@ -1,0 +1,11 @@
+.git/
+.idea/
+.env
+.vscode/
+node/node_modules
+!resources/lang/vendor
+!resources/views/vendor
+!public/vendor
+/storage/*.key
+/staging
+vendor/
