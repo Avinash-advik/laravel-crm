@@ -495,9 +495,9 @@
                             $.each(result.contact_custom_values, function(index, item) {
                                 var name = item.custom_field_id+'_'+item.custom_field.name;
                                 if(item.custom_field.type == 'textarea'){
-                                    $('textarea[name="custom['+name+']"]').val(item.value);
+                                    $('#editContactModal').find('textarea[name="custom['+name+']"]').val(item.value);
                                 }else{
-                                    $('input[name="custom['+name+']"]').val(item.value);
+                                    $('#editContactModal').find('input[name="custom['+name+']"]').val(item.value);
                                 }
 
                             });
